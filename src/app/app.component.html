@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div class= "crew_section">
+    <span class= "alotted_section">
+    <p class="crew_span"> span 1 </p>  
+    <p class="crew_span"> span 2 </p>  
+    <p class="crew_span"> span 3 </p>  
+    </span>
+    <span class="unalloted_section">
+        
+    <p class="crew_span" ngDraggable (started)="onStart($event)" (stopped)="onStop($event)" (movingOffset)="onMoving($event)"
+    [preventDefaultEvent]="true" (endOffset)="onMoveEnd($event)"> span 11 </p> 
+
+    <p class="crew_span" ngDraggable (started)="onStart($event)" (stopped)="onStop($event)" (movingOffset)="onMoving($event)"
+    [preventDefaultEvent]="true" (endOffset)="onMoveEnd($event)"> span 12 </p>  
+    
+    <p class="crew_span" ngDraggable (started)="onStart($event)" (stopped)="onStop($event)" (movingOffset)="onMoving($event)"
+    [preventDefaultEvent]="true" (endOffset)="onMoveEnd($event)"> span 13 </p>  
+
+    </span>
+  </div>
+
+  
+
+</div>
+
+
+

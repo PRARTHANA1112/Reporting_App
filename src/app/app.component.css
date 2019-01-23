@@ -1,0 +1,20 @@
+.crew_section{
+    text-align: left;
+}
+.alotted_section::after{
+    content: "";
+  background-color:#03a9f4;
+  position: absolute;
+  width: 5px;
+  height: 10%;
+}
+.unalloted_section{
+    margin:1%;
+}
+.crew_span{
+    padding: 1%;
+    border: 1px solid #e2dddd;
+    margin: 1%;
+    border-radius: 10px;
+    display: inline-block;
+}
