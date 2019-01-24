@@ -1,21 +1,24 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <div class= "crew_section">
+  <div class= "crew_section" [ngClass]="{ 'top-b': !edge?.top, 'bottom-b': !edge?.bottom, 'left-b': !edge?.left, 'right-b': !edge?.right }" #myBounds>
     <span class= "alotted_section">
-    <p class="crew_span"> span 1 </p>  
-    <p class="crew_span"> span 2 </p>  
-    <p class="crew_span"> span 3 </p>  
+    <p class="crew_span"> <i class="fa fa-user"></i><br/>crew 1 </p>  
+    <p class="crew_span"><i class="fa fa-user"></i><br/> crew 2 </p>  
+    <p class="crew_span"><i class="fa fa-user"></i><br/> crew 3 </p>  
     </span>
     <span class="unalloted_section">
         
     <p class="crew_span" ngDraggable (started)="onStart($event)" (stopped)="onStop($event)" (movingOffset)="onMoving($event)"
-    [preventDefaultEvent]="true" (endOffset)="onMoveEnd($event)"> span 11 </p> 
+    [preventDefaultEvent]="true" (endOffset)="onMoveEnd($event)" (edge)="checkEdge($event)" [bounds]="myBounds" [inBounds]="inBounds">
+          <i class="fa fa-user"></i><br/>user1 </p> 
 
     <p class="crew_span" ngDraggable (started)="onStart($event)" (stopped)="onStop($event)" (movingOffset)="onMoving($event)"
-    [preventDefaultEvent]="true" (endOffset)="onMoveEnd($event)"> span 12 </p>  
+    [preventDefaultEvent]="true" (endOffset)="onMoveEnd($event)" (edge)="checkEdge($event)" [bounds]="myBounds" [inBounds]="inBounds"> 
+            <i class="fa fa-user"></i><br/>user2 </p>  
     
     <p class="crew_span" ngDraggable (started)="onStart($event)" (stopped)="onStop($event)" (movingOffset)="onMoving($event)"
-    [preventDefaultEvent]="true" (endOffset)="onMoveEnd($event)"> span 13 </p>  
+    [preventDefaultEvent]="true" (endOffset)="onMoveEnd($event)" (edge)="checkEdge($event)" [bounds]="myBounds" [inBounds]="inBounds">
+             <i class="fa fa-user"></i><br/>user3 </p>  
 
     </span>
   </div>

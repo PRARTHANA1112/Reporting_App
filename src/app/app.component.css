@@ -3,18 +3,21 @@
 }
 .alotted_section::after{
     content: "";
-  background-color:#03a9f4;
+  background-color:grey;
   position: absolute;
   width: 5px;
   height: 10%;
 }
 .unalloted_section{
-    margin:1%;
+    margin: 0.4%;
 }
 .crew_span{
     padding: 1%;
     border: 1px solid #e2dddd;
-    margin: 1%;
+    margin: 0.2%;
     border-radius: 10px;
     display: inline-block;
+    text-align: center;
+    color: grey;
+    border-top: 5px solid grey;
 }
