@@ -10,7 +10,7 @@ import { WeatherDetailsComponent } from './components/weather-details/weather-de
 import { CrewManagementComponent } from './components/crew-management/crew-management.component';
 import { TimeSlotComponent } from './components/time-slot/time-slot.component';
 import { TimeSlotDirective } from './directives/time-slot.directive';
-import { InfoDirective } from './info.directive';
+import { InfoDirective } from './directives/info.directive';
 
 @NgModule({
   declarations: [
